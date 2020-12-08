@@ -1,0 +1,295 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* navbar-style */
+.navbar{
+    z-index: 3;
+}
+.nav-bg{
+    background-color:hsl(0, 0%, 100%) !important;
+}
+.float{
+    position: relative;
+}
+.nav-link{
+    color:hsl(233, 8%, 62%) !important;
+    font-weight: 500 !important;
+}
+.navbar-nav .nav-item button{
+  position: absolute;
+  right: 0;
+}
+.nav-item button{
+    color:hsl(0, 0%, 100%);
+    border-radius: 50px !important;
+    font-size: 13px;
+    padding: 10px;
+    width: 140px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%)) !important;
+}
+.nav-item button:hover{
+    opacity: 0.8;
+    color: hsl(0, 0%, 100%) !important;
+}
+
+.nav-link:hover{
+    color:hsl(233, 26%, 24%) !important;
+}
+.new-icon .block1,.block2,.block3{
+    width: 30px;
+    height: 2px;
+    background-color:  hsl(270, 9%, 17%);
+}
+.new-icon{
+    cursor: pointer;
+}
+.change .block1{
+     transition: 0.5s;
+     transform: rotate(45deg);
+     transform-origin: 5.5px;  
+}
+.change .block3{
+    transition: 0.5s;
+    transform: rotate(-45deg);
+    transform-origin: 5.5px;
+}
+.change .block2{
+    transition: 0.5s;
+    transform: translateX(-30px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* header section styles */
+.header{
+    position: relative;
+    z-index: 1;
+}
+.header .row{
+    flex-wrap: wrap-reverse;
+}
+.header .jumbotron{
+    margin-bottom: 0 !important;
+}
+
+.header .header-content{
+   padding-top: 110px;
+  
+}
+.header .header-content-img .waste{
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+}
+
+.header .header-content h1{
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    letter-spacing: .1px !important;
+    margin-bottom: 30px;
+}
+.header .header-content p{
+    font-weight: 500;
+    font-size: 17px;
+    color:hsl(233, 8%, 62%);
+    margin-bottom: 30px;
+}
+
+/* facility section */
+.facility .jumbotron{
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+}
+.facility .facility-content h3{
+    color:  hsl(233, 26%, 24%);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.facility .facility-content p{
+    color: hsl(233, 8%, 62%);
+    width: 600px;
+    margin-bottom: 40px;
+}
+.facility .card-content h4{
+    color:  hsl(233, 26%, 24%);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.facility .card-content p{
+    color: hsl(233, 8%, 62%);
+    width: 260px;
+    font-size: 15.1px;
+    margin-bottom: 50px;
+}
+/* article styles */
+.article .jumbotron{
+    border-radius: 0 !important;
+    background-color: hsl(0, 0%, 97%);
+    margin-bottom: 0 !important;
+}
+.article .article-head h3{
+    color: hsl(233, 26%, 24%);
+    font-weight: 400;
+    letter-spacing: 1.6px;
+}
+.article .card{
+    margin-top: 50px;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.article .card-body small{
+    color: hsl(233, 8%, 62%);
+    margin-bottom: 10px !important;
+    font-size: 11px;
+}
+.article .card-body h6{
+    color: hsl(233, 26%, 24%);
+    margin-bottom: 7px;
+    line-height: 16px;
+}
+.article .card-body p{
+    color:  hsl(233, 8%, 62%);
+    font-size: 13px;
+}
+.article .card-img-top{
+    width: 100%;
+    height: 27.5vh;
+}
+/* footer style */
+.footer .jumbotron{
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+    background-color: hsl(233, 26%, 24%);
+    padding-bottom: 25px !important
+}
+.footer .logo {
+    margin-bottom: 27px;
+}
+svg:hover path{
+    fill:hsl(136, 76%, 56%) ;
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer ul a{
+    text-decoration: none;
+}
+.footer ul li{
+    margin-bottom: 10px;
+    color: rgb(226, 225, 225);
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer ul li:hover{
+    color: hsl(136, 65%, 51%);
+}
+.footer small{
+    color: rgb(221, 217, 217);
+    font-size: 12px;
+}
+.footer .float{
+  position: relative;
+  right: -30px;
+}
+/* media queries */
+
+
+@media (max-width:578px){
+    .nav-link{
+        color:hsl(233, 8%, 62%) !important;
+        font-weight: 500 !important;
+        font-size: 20px;
+    }
+    .header .jumbotron{
+        background-color:  hsl(220, 16%, 96%);
+        background-image: url(../images/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top  right ;
+        border-radius: 0 !important;
+        background-size: 500px 500px;
+    } 
+    .mobile{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+    }
+    .header .header-content{
+        padding-top: 0 !important;
+     }
+     .facility .facility-content p{
+         width: auto;
+     }
+     .facility .card-content p{
+         width: auto;
+     }
+     .header .header-content, .facility .facility-content,.facility .card-content{
+         text-align: center;
+     }
+     .facility .jumbotron{
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+    .article .card-img-top{
+        width: 100%;
+        height: 40vh; 
+    }
+    .article .article-head{
+        text-align: center;
+    }
+    .footer ul li ,.footer .logo , .footer .social-icons{
+        text-align: center;
+    }
+    .footer .social-icons{
+        margin-bottom: 20px;
+    }
+    .footer .footer-second-li{
+        margin-bottom: 30px;
+    }
+    .footer .footer-end{
+        text-align: center !important;
+        float: none !important;
+        position: relative;
+        left: -30px;
+    }
+    .footer .footer-end small{
+        position: relative;
+        left: 30px;
+    }
+}
+@media (min-width:578px){
+    .new-icon .block1,.block2,.block3{
+        display: none;
+    }
+    .header .jumbotron{
+        background-color:  hsl(220, 16%, 96%);
+        background-image: url(../images/bg-intro-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top -300px right -550px;
+        border-radius: 0 !important;
+        background-size: cover;
+    }
+    .mobile{
+        position: absolute;
+        top: -110px;
+        right: -150px;
+        z-index: 1;
+    }
+    .nav-item .line{
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+        top: 53px;
+    }
+}
